@@ -1,14 +1,20 @@
-# Portfolio
+# HTML website into ANGULAR app
 
-This small app is about turning a HTML website with several pages into an ANGULAR application. Pages were turned into components, pages and header/footer.
+<div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
+   <img style="width:1000px; height:250px; margin:12px" src="https://github.com/LolaGM/HTMLtemplate-into-Angular-app/assets/116545851/edc9582e-91dc-4e9a-81e6-62d03f5bc6f0">
+</div>
+
+
+This small app is about turning a HTML website with several pages into an ANGULAR application. All pages were turned into components, pages and header/footer.
 
 ANGULAR basic features like routing are used.
 
 
+## Installation Instructions:
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.5.
 
-## Installation Instructions:
 
 ### Development server
 
