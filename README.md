@@ -4,14 +4,16 @@
    <img style="width:1000px; height:250px; margin:12px" src="https://github.com/LolaGM/HTMLtemplate-into-Angular-app/assets/116545851/edc9582e-91dc-4e9a-81e6-62d03f5bc6f0">
 </div>
 
+This small project is about turning a full HTML website with several pages into an ANGULAR application. All pages are turned into components, pages, header and footer.
 
-This small app is about turning a HTML website with several pages into an ANGULAR application. All pages were turned into components, pages and header/footer.
-
-ANGULAR basic features like routing are used.
+<ol>
+   <li>ANGULAR basic features like routing are used.</li>
+   <li>Firebase is used for database</li>
+   <li>CSS animations is used for dynamic purposes</li>
+</ol>
 
 
 ## Installation Instructions:
-
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.5.
 
