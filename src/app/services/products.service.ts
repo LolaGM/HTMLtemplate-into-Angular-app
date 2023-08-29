@@ -1,0 +1,38 @@
+import { HttpClient } from '@angular/common/http';
+
+import { Injectable } from '@angular/core';
+
+import { Product } from '../interfaces/product.interface';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class ProductsService {
+
+  isLoading:boolean = true; //cuando se inicia el constructor está cargando pero luego ya cambia
+
+  products: Product[] = [];
+
+  constructor( private http: HttpClient ) { 
+
+    this.loadProducts();
+  }
+
+
+  private loadProducts() {
+
+    this.http.get<Product[]>('https://html-angular-a0d50-default-rtdb.europe-west1.firebasedatabase.app/productos_idx.json')
+      .subscribe( 
+        (resp: Product[]) => {
+
+          console.log(resp);
+          this.products = resp;
+          this.isLoading = false; //cuando ya tengo los productos lo hago false
+
+          // setTimeout(() => { //para ver un loading mientras cargan los productos pero no hace falta
+          //   this.isLoading = false;
+          // },2000)
+        
+        });
+  }
+}
