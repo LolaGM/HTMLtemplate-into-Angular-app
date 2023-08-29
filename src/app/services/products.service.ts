@@ -35,4 +35,11 @@ export class ProductsService {
         
         });
   }
+
+  public getProduct(id:string){ //dentro del get indico id
+
+   return this.http.get(`https://html-angular-a0d50-default-rtdb.europe-west1.firebasedatabase.app/productos/${id}.json`); //retornamos todo el objeto así que no nos subscribimos
+
+  };
+
 }

@@ -9,7 +9,7 @@ import { ItemComponent } from './pages/item/item.component';
 const routes: Routes = [
   {path: 'home', component:PortfolioComponent},
   {path: 'about', component:AboutComponent},
-  {path: 'item', component: ItemComponent},
+  {path: 'item/:id', component: ItemComponent}, //ñadimos :id a la ruta al que le añadiremos el código del JSON
   {path: '**', pathMatch: 'full', redirectTo:'home'}, //redirecciona a PortFolio
 ];
 
