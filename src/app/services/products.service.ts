@@ -12,6 +12,7 @@ export class ProductsService {
   isLoading:boolean = true; //cuando se inicia el constructor está cargando pero luego ya cambia
 
   products: Product[] = [];
+  productsFiltered: Product[] = [];
 
   constructor( private http: HttpClient ) { 
 
@@ -41,5 +42,14 @@ export class ProductsService {
    return this.http.get(`https://html-angular-a0d50-default-rtdb.europe-west1.firebasedatabase.app/productos/${id}.json`); //retornamos todo el objeto así que no nos subscribimos
 
   };
+
+  public searchProduct( term:string) {
+
+    this.productsFiltered = this.products.filter( product => { //barremos el arreglo con filter
+      return true;
+
+    }) 
+
+  }
 
 }
